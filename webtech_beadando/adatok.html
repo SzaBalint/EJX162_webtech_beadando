@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+body {margin:0;}
+ </style>
+ <meta charset="utf-8">
+ <title>Szabó Bálint webtech</title>
+ <script src="JavaScripts/forms.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="css/adatok.css">
+</head>
+  <body>
+  <ul id="menu">
+ 		<li><a href="kezdolap.html">Kezdőlap</a></li>
+  		<li><a href="leiras.html">Leírás</a></li>
+  		<li><a href="jatek.html">Játék</a></li>
+ 		<li><a href="eredmenyek.html">Eredmények</a></li>
+    <li><a class="active" href="adatok.html">Adatok</a></li>
+    
+</ul>
+<div>
+  <h2>Add meg a születési dátumodat:</h2> 
+	<label> 
+		Születési dátum: 
+	</label> 
+
+	<input id="inputDate" type="date" name="begin"
+		placeholder="dd-mm-yyyy" value=""
+		min="1997-01-01" max="2030-12-31"> 
+
+  <h2>Add meg a neved és a felhasználónevedet:</h2>
+<form id="names">
+  <label>Vezetéknév: </label>
+  <input type="text" id="fname"><br><br>
+  <label>Keresztnév: </label>
+  <input type="text" id="lname"><br><br>
+  <label>Felhasználónév: </label>
+  <input type="text" id="username"><br><br>
+  
+</form>
+
+  <h2>Add meg milyen színnel szeretnéd kiiratni a megadott adatokat:</h2>
+  <label>Betűszín:</label>
+  <select id="colors" name="colors">
+    <option value="red" style="background:red">piros</option>
+    <option value="purple" style="background:purple">lila</option>
+    <option value="blue" style="background:blue">kék</option>
+    <option value="green" style="background:green">zöld</option>
+  </select>
+
+<form id="gaming_time">
+    <h2>Mennyit játszol logikai játékokkal?</h2>    
+    <input id="cbNapi" type="radio" name="answer" value="Napi szinten">
+    <label for="answer">Napi szinten</label><br>
+    <input id="cbHeti" type="radio" name="answer" value="Heti szinten">
+    <label for="answer">Heti szinten</label><br>
+    <input id="cbHavi" type="radio" name="answer" value="Havi szinten">
+    <label for="answer">Havi szinten</label><br>
+    
+</form>
+<output form="age"></output>
+</div>
+
+<div>
+<input type="submit" text="küldés" onclick="onSubmit()">
+<br>
+<label id="output_fname"></label>
+<label id="output_lname"></label>
+<br>
+<label id="output_uname"></label>
+<br>
+<label id="output_date"></label>
+<br>
+<label id="output_gtime"></label>
+</div>
+
+</body>
+</html>

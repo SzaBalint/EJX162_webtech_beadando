@@ -19,7 +19,7 @@ function onSliderChange(){
       }else {
         var text = document.createTextNode("O");
       }
-      td1.appendChild(text);
+      td.appendChild(text);
       tr.appendChild(td);
     }
     table.appendChild(tr);
@@ -45,7 +45,7 @@ function onSliderLoad(){
       }else {
         var text = document.createTextNode("O");
       }
-      td1.appendChild(text);
+      td.appendChild(text);
       tr.appendChild(td);
     }
     table.appendChild(tr);

@@ -100,8 +100,12 @@ html{
       background-color: #fff;
       font-size: 30px;
       font-weight: bold;
-      width: 50%;
       
+    }
+
+    .eredmenyek{
+      width: 50%;
+      background-color: #fff;
     }
 
     td {
